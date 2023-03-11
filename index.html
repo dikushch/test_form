@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>form test</title>
+</head>
+
+<body>
+  <form class="form">
+    <h2 class="form__header"><span>Sign up</span></h2>
+    <div class="form__wrap">
+      <h3 class="form__subtitle  anim">New user?<span>use the form below to create your account.</span></h3>
+      <div class="form__item anim">
+        <label for="fname" class="form__label">First Name</label>
+        <input type="text" name="fname" id="fname" class="form__input" required>
+      </div>
+      <div class="form__item anim">
+        <label for="lname" class="form__label">Last Name</label>
+        <input type="text" name="lname" id="lname" class="form__input" required>
+      </div>
+      <div class="form__item anim">
+        <label for="nationality" class="form__label">Nationality</label>
+        <select name="nationality" id="nationality" class="form__select" required>
+          <option value="American">American</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+      <div class="form__item anim">
+        <label for="email" class="form__label">E-mail</label>
+        <input type="email" name="email" id="email" class="form__input" required>
+      </div>
+      <div class="form__item anim">
+        <h4 class="form__name">Date of Birth</h4>
+        <div class="form__select-wrap">
+          <select name="b-date" id="b-date" class="form__select" required>
+            <option value="21">21</option>
+            <option value="22">22</option>
+          </select>
+          <select name="b-month" id="b-month" class="form__select" required>
+            <option value="december">December</option>
+            <option value="january">January</option>
+          </select>
+          <select name="b-year" id="b-year" class="form__select" required>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+          </select>
+        </div>
+      </div>
+      <div class="form__item anim">
+        <h4 class="form__name">Gender</h4>
+        <div class="form__radio-wrap">
+          <input type="radio" id="male" name="gender" value="male" class="form__radio-input" checked>
+          <label for="male" class="form__radio-label">Male</label>
+          <input type="radio" id="female" name="gender" value="female" class="form__radio-input">
+          <label for="female" class="form__radio-label">Female</label>
+        </div>
+      </div>
+      <div class="form__item anim">
+        <label for="password" class="form__label">Password</label>
+        <input type="password" name="password" id="password" class="form__input" required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <div class="form__help">
+          <span>- use more than 8 characters</span>
+          <span>- use lowercase and uppercase letters</span>
+          <span>- use numbers</span>
+        </div>
+      </div>
+      <div class="form__item anim">
+        <label for="cpassword" class="form__label">Confirm Password</label>
+        <input type="password" name="cpassword" id="cpassword" class="form__input" required>
+      </div>
+      <p class="form__login anim">Have an account? <a href="#" class="form__login-link">Login</a></p>
+      <button class="form__btn anim">Complete Signup</button>
+      <div class="form__registered">
+        <h3 class="form__subtitle anim">Thank You!<span>you registered!</span></h3>
+      </div>
+    </div>
+
+    <div class="form__dec">
+      <svg class="anim-svg" width="411" height="475" viewBox="0 0 411 475" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M205.5 99.5C181.049 99.5 161.5 119.049 161.5 143.5C161.5 167.951 181.049 187.5 205.5 187.5C229.951 187.5 249.5 167.951 249.5 143.5C249.5 119.049 229.951 99.5 205.5 99.5Z"
+          stroke="#F9FAFF" stroke-width="29" />
+        <path
+          d="M205.5 14.5C100.178 14.5 14.5 100.178 14.5 205.5C14.5 310.822 100.178 396.5 205.5 396.5C310.822 396.5 396.5 310.822 396.5 205.5C396.5 100.178 310.822 14.5 205.5 14.5Z"
+          stroke="#F9FAFF" stroke-width="29" />
+        <path
+          d="M205.5 460.5C141.802 460.5 90.5 409.198 90.5 345.5C90.5 281.802 141.802 230.5 205.5 230.5C269.198 230.5 320.5 281.802 320.5 345.5C320.5 409.198 269.198 460.5 205.5 460.5Z"
+          stroke="#F9FAFF" stroke-width="29" />
+      </svg>
+    </div>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
